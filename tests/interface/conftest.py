@@ -43,7 +43,21 @@ def interface_tester(interface_tester: InterfaceTester):
                                         },
                                         "checks": {},
                                     }
-                                )
+                                ),
+                                "bar": Layer(
+                                    {
+                                        "summary": "foo",
+                                        "description": "bar",
+                                        "services": {
+                                            "tempo-ready": {
+                                                "startup": "disabled",
+                                                "current": "inactive",
+                                                "name": "tempo-ready",
+                                            }
+                                        },
+                                        "checks": {},
+                                    }
+                                ),
                             },
                         )
                     ],
