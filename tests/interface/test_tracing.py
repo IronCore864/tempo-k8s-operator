@@ -3,10 +3,10 @@
 from interface_tester import InterfaceTester
 
 
-def test_tracing_v0_interface(interface_tester: InterfaceTester):
+def test_tracing_v1_interface(interface_tester: InterfaceTester):
     interface_tester.configure(
         interface_name="tracing",
-        interface_version=0,
+        interface_version=1,
     )
     interface_tester.run()
 
